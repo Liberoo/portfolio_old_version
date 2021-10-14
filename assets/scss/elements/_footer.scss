@@ -1,0 +1,11 @@
+.footerBox{
+ @include flexCenter;
+    min-height: 10vh;
+    color:$main;
+    background-color: $main--dark;
+    font-size: 1rem;
+    span{
+        font-weight: 500;
+        padding:0px 10px;
+    }
+}

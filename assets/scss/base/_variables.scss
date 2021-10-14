@@ -1,0 +1,35 @@
+$main: 				#7BDEC0;
+$main--light: 		#a0e0f0;
+$main--dark: 		#282828;
+
+$aux: 				#f5c134;
+$text: 				#fff;
+$accent:			#45B367;
+
+$font--main:		'Rubik', Helvetica, Arial, sans-serif;
+
+
+$baseSize: 			16; 
+$whitespace:		30px;
+
+// Mixins
+@mixin makeRem($fontInPx) {
+	font-size: ($fontInPx / $baseSize)+rem;
+}
+@mixin flexCenter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+
+// Extends
+%absCenter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}

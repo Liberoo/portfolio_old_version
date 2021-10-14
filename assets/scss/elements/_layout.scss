@@ -1,0 +1,60 @@
+
+body {
+    font-size: $baseSize+px;
+    font-family: $font--main;
+    color: $text;
+    line-height: 140%;
+    &.js-blockScrolling {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+// responsive images
+img {
+    max-width: 100%;
+    height: auto;
+}
+// links 
+a {
+    color: $main;
+    &:hover, &:focus, &:active {
+        color: darken($main,10%);
+    }
+}
+// whitespace
+.clearspace {
+    clear: both;
+    &LG {
+        height: $whitespace*2;
+    }
+    &SM {
+        height: $whitespace;
+    }
+}
+
+//text alignements
+$alignments : left, center, right;
+@each $align in $alignments {
+    .text--#{$align} {
+        text-align: $align;
+    }
+}
+
+// headings
+@for $i from 1 through 6 {
+    h#{$i} {
+        margin: 0;padding: 0;
+    }
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    margin:0;
+}

@@ -1,0 +1,707 @@
+.containerBlok{
+    @include flexCenter;
+    width:100vw;
+    height: 100vh;
+    background-color: $main--dark;
+    margin: 0;
+    &__leftSection{
+        @include flexCenter;
+        line-height: 1;
+        color:$text;
+        font-size: 70px;
+        font-weight: 900;
+        flex:1;
+        overflow: hidden;
+        position: relative;
+        
+     
+        
+        
+    }
+    &__leftBox{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+      
+      
+     
+
+    }
+    &__leftText{
+        padding:0 0px 10px 40px ;
+    }
+    &__leftLine{
+        position: absolute;
+        right: -1000px;
+        bottom:0;
+        width:70%;
+        margin-top:30px;
+        height: 10px;
+        background-color: $main;
+        animation: enterLine 2s  ;
+     
+     animation-fill-mode: forwards;
+
+    }
+    &__rightSection{
+        @include flexCenter;
+        
+      
+        flex:1;
+        padding-right:10vw;
+        h1{
+            font-weight: 900;
+            font-size: 100px;
+            line-height: 1;
+            letter-spacing: 10px;
+      
+          
+
+        }
+       
+      
+    }
+    &__rightBox{
+        position:relative;
+        z-index: 2;
+    }
+    &__greenSquare{
+        width:6vw;
+        height: 10vw;
+        
+        
+        position:absolute;
+        background-color: $main;
+        left:75%;
+        top:50%;
+        z-index:1;
+    }
+    &__Text{
+        position:relative;
+        z-index: 2;
+        text-transform: uppercase;
+      
+    }
+}
+
+.page{
+    &__header{
+        @include flexCenter;
+        width:100%;
+        height: auto;
+        background-color: $main--dark;
+        padding-bottom: 100px;
+    }
+    &__headerText{
+      
+        margin-right:50px;
+        margin-left: 63px;
+    }
+    &__line{
+        flex:1;
+        width:100%;
+        height: 10px;
+        background-color: $main;
+    }
+}
+
+.about{
+   
+    &__fullBox{
+        @include flexCenter;
+        flex-direction: column;
+        width:100vw;
+        background-color: $main--dark;
+      
+    }
+    &__box{
+        display: flex;
+        flex-direction: row;
+        width:70%;
+        min-height: 40vh;
+       
+   
+    }
+    &__box2{
+        display: flex;
+        flex-direction: row;
+        width:70%;
+        min-height: 40vh;
+       
+        span{
+            font-weight: 500;
+            color:$main;
+        }
+       
+   
+    }
+    &__leftSection{
+        display: flex;
+        justify-content: flex-end;
+        background-color: $main;
+        width:400px;
+      height: 50%;
+        img{
+            width: 80%;
+            
+        }
+    }
+    &__socialMedia{
+        a{
+            text-decoration: none;
+            &:hover{
+                color:#fff;
+            }
+        }
+        
+        i{
+            font-size: 30px;
+            padding:0 5px;
+        }
+    }
+    &__rightSection{
+        padding:20px;
+        flex:1;
+       h2{
+           padding-bottom:30px;
+       }
+    }
+    &__features{
+        display: flex;
+        flex-wrap:wrap;
+        width: 100%;
+       
+
+    }
+    &__skills{
+        display:flex;
+       
+        justify-content: flex-start;
+        flex-direction: column;
+        padding:20px;
+   
+    ul{
+        display:inline-block;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin:20px 0px;
+        border:1px solid #fff
+    }
+    li{
+        padding: 30px 10px;
+        border-bottom: 1px solid #fff;
+        border-width: 100%;
+        list-style: none;
+
+    }
+
+    }
+    &__otherInfoBox{
+        display: flex;
+        justify-content: space-between;
+        padding:  100px 0 200px 0;
+
+
+    }
+    &__otherInfo{
+ 
+        width: 50%;
+        margin: 0 10px;
+        ul{
+            list-style: none;
+        }
+        li{
+         
+            padding: 5px 0;
+          
+        }
+    }
+}
+  
+.photoshop{
+    @include flexCenter;
+    width:100vw;
+    background-color: $main--dark;
+    padding-bottom: 150px;
+ &__box{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    min-height: 40vh;
+ }
+ &__sources{
+     @include flexCenter;
+     flex-wrap: wrap;
+     width: 100%;
+ 
+     img{
+         width:30%;
+         min-width: 300px;
+         padding:25px;
+     }
+ }
+
+}
+.otherHeadline{
+    @include flexCenter;
+
+    width:100vw;
+    background-color: $main--dark;
+    &__headlineText{
+    
+        width:70%;
+        padding-bottom:50px;
+    }
+}
+.ui1{
+    width:100vw;
+    img{
+        width:100%;
+    }
+}
+
+
+.uiHeadline{
+    @include flexCenter;
+    padding:50px 0 ;
+    width:100vw;
+    background-color: $main--dark;
+   
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:80%;
+    }
+    // &__text{
+    //     width: 50%;;
+    //     background-color: red;
+    // }
+    &__technology{
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: row;
+       padding: 0 20px;
+   
+      i{
+          font-size: 30px;
+       
+          vertical-align: middle;
+      }
+       a{
+        text-align: center;
+        vertical-align: middle;
+        background-color: $main;
+        padding:20px ;
+        margin: 0 20px;
+        color:$main--dark;
+        font-weight: 700;
+        border:2px solid $main;
+       }
+       a:hover{
+        
+           color:$main;
+           text-decoration: none;
+           border:2px solid $main;
+           background-color: $main--dark;
+           margin:0 20px;
+         
+       }
+       h3{
+           color:white;
+       }
+ 
+    }
+
+}
+.widthLine{
+    width:100vw;
+    min-height: 5px;
+
+    background-color: $main;
+}
+
+
+.ui2{
+    display: flex;
+    justify-content: flex-end;
+    width:100vw;
+ 
+    background-color:#FFB400 ;
+    &__box{
+        display: flex;
+        width:80%;
+      height: 100%;
+      
+        padding-right: 5%;
+     
+
+    }
+    &__left{
+        @include flexCenter;
+        width:40%;
+       
+        img{
+            min-width: 60vw;
+            width: 100%;
+            
+        }
+    }
+    &__right{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: stretch;
+        flex-direction: column;
+        width: 60%;
+    
+        padding:50px 0px;
+    }
+    &__up{
+        height: 50%;
+     padding-bottom: 100px;
+        img{
+            width: 100%;
+            box-shadow: 0px 12px 19px 2px rgba(0,0,0,0.58);
+        }
+    }
+    &__down{
+        height: 50%;
+    
+        img{
+            width: 100%;
+            box-shadow: 0px 12px 19px 2px rgba(0,0,0,0.58);
+        }
+    }
+}
+
+.ui3{
+@include flexCenter;
+width: 100vw;
+background-color: $main--dark;
+&__box{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+img{
+    box-shadow: 0px 12px 19px 2px rgba(0,0,0,0.58);
+    margin-bottom: 50px;
+}
+}
+}
+
+.contact{
+    @include flexCenter;
+    background-color: $main;
+    width: 100vw;
+    min-height: 40vh;
+
+
+
+&__box{
+    @include flexCenter;
+    flex-wrap: wrap;
+    width: 70%;
+    min-height: 10vh;
+    box-shadow: 0px 12px 19px 2px rgba(0,0,0,0.58);
+
+          
+
+    
+}
+&__info{
+    @include flexCenter;
+    width: 50%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color:$main--dark;
+    line-height: 30px;
+    span{
+        font-weight: 500;
+        padding-right:10px;
+    }
+}
+}
+.icons{
+    padding: 0 20px;
+}
+
+
+
+h2{
+
+    font-size: 3rem;;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+h3{
+    color:$main;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    
+    
+}
+
+
+
+@keyframes enterAnimation {
+    from {opacity: 0%;}
+    to {opacity:100%;}
+  }
+  @keyframes enterLine {
+    from {right:-1000px;}
+    to {right:0px;}
+  }
+  @media screen and (max-width: 1285px){
+    .photoshop__sources{
+        img{
+            width:50%;
+        }
+    }
+    }
+  @media screen and (max-width: 1200px){
+    .about{
+     
+        &__box{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+           
+        }
+        &__leftSection{
+            width:50%;
+            
+        }
+        &__rightSection{
+           
+            h2{
+                text-align: center;
+                padding: 20px 0;
+            }
+
+        }
+        &__otherInfoBox{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0;
+            padding:0;
+           
+        }
+        &__otherInfo{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            padding-bottom:30px;
+            width: 100%;
+    }
+   
+   
+        h3{
+           text-align: center;
+        }
+    }
+    .containerBlok{
+        &__leftSection{
+            font-size: 50px;
+        }
+        &__rightSection{
+            h1{
+                
+                font-size: 70px;
+            }
+        }  
+    }
+    .contact{
+        &__info{
+            width: 100%;
+            span{
+             padding-right:0px;
+            }
+        }
+    } 
+
+}
+
+
+
+
+
+@media screen and (max-width: 880px){
+    .containerBlok{
+       flex-direction: column;
+       &__greenSquare{
+        width:50px;
+        height: 100px;
+       }
+       &__leftSection{
+           justify-content: flex-end;
+           align-items: flex-end;
+       }
+       &__leftBox{
+           height: 30%;
+        
+       }
+       &__leftText{
+           padding:0;
+       }
+        &__leftLine{
+    display: none;;
+        }
+        &__leftSection{
+            font-size: 30px;
+        }
+        &__rightSection{
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0;
+            h1{
+                
+                font-size: 40px;
+            }
+            &__greenSquare{
+                width:100px;
+                height: 100px;
+            }
+        }  
+     
+    }
+    .uiHeadline{
+        padding:10px;
+        
+        &__text{
+            margin: 0 0px;
+            padding:10px 0;
+
+        }
+        &__box{
+            flex-direction: column;
+            margin:0;
+            
+        }
+       
+       &__technology{
+           flex-direction: column;
+           
+           font-size: 1rem;
+           a{
+               margin:30px;
+           }
+           a:hover{
+               margin:30px;
+           }
+
+       }
+    }
+    .ui2{
+        &__box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+        margin:0;
+        width: 100%;
+        }
+        &__left{
+            width: 100%;
+        }
+        &__right{
+            width: 90%;
+        }
+}
+.ui3{
+    &__box{
+        width: 90%;
+    }
+}
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+
+    .contact{
+        &__box{
+            width:100%;
+        }
+        &__info{
+            font-size: 1rem;
+            width: 100%;
+            padding:0 5px;
+            span{
+             padding-right:0px;
+            }
+        }
+    } 
+
+    .about{
+        &__skills{
+            padding:0;
+        }
+        &__box{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0 15px;
+        }
+        &__leftSection{
+            width:100%;
+            
+        }
+        &__rightSection{
+            padding-left:0px;
+            padding-right:0px;
+         
+            padding:0;
+            margin:0;
+            h2{
+                text-align: center;
+                padding: 20px 0;
+            }
+
+        }
+        &__otherInfoBox{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0;
+            padding:0;
+           
+        }
+        &__otherInfo{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            padding-bottom:30px;
+            width: 100%;
+    }
+   
+   
+        h3{
+           text-align: center;
+        }
+    }
+    .page__header{
+        padding:50px 0 ;
+    }
+    .photoshop__sources{
+        img{
+            width:80%;
+        }
+    }
+    h3{
+        text-align: center;
+    }
+}

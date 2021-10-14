@@ -1,0 +1,130 @@
+.menu{
+    position: fixed;
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main--dark;
+    min-height: 8vh;
+    padding-left: 10%;
+    padding-right:40px;
+    font-family: $font--main;
+    z-index:5;
+   
+ &__shadowOnScroll{
+    box-shadow: 0px 12px 19px 2px rgba(0,0,0,0.58);
+ }
+ 
+
+    &__logo{
+        color:$main;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size:20px;
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:white;
+        }
+    
+    }
+    &__list{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width:30%;
+        padding:0;
+   
+        li{
+            list-style: none;
+        }
+    }
+    &__link{
+        a{
+            text-decoration: none;
+            letter-spacing: 3px;
+        }
+        a:hover{
+            color:#fff;
+            transition: .5s;
+         
+        }
+      &--btn{
+        padding:10px;
+        color:$main--dark;
+        background-color: $main;;
+        font-weight: 500;
+        letter-spacing: 3px;
+        border:2px solid $main;
+         &:hover{
+             background-color: $main--dark;
+         
+         }
+      }
+    }
+    &__burger{
+        display: none;
+        cursor:pointer;
+        div{
+            width:25px;
+            height: 4px;
+            background-color:$main;
+            margin:5px;
+            border-radius: 20px;
+            transition: .5s;
+        
+        }
+    }
+}
+
+.toggle {
+    .menu__burgerLine1{ 
+        transform: rotate(-45deg) translate(-4px,3px);
+    }
+    .menu__burgerLine2{
+        display:none;
+    }
+    .menu__burgerLine3{
+
+        transform: rotate(45deg) translate(-4px,-3px);
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+   .menu__list{
+       width:40%;
+
+   }
+}
+@media screen and (max-width: 1100px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+
+   
+        &__list{
+            position:absolute;
+            min-width: 50vw;
+            right:0px;
+            height: 92vh;
+            top:8vh;
+            background-color: $main--dark;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            transform:translateX(100%);
+            transition:transform .5s ease-in;
+    
+        }
+        &__burger{
+            display:block;
+        }
+        &__active{
+            transform: translateX(0%);
+        }
+    }
+ }
